@@ -1,0 +1,21 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven { url = 'https://maven.minecraftforge.net/' }
+        mavenCentral()
+    }
+}
+
+rootProject.name = 'mod-ai'
+
+include 'common'
+
+// The 'forge' module depends on Minecraft Forge, which is only resolvable
+// with network access to https://maven.minecraftforge.net. It is excluded
+// by default so that `gradle build`/`gradle test` work out-of-the-box for
+// the engine-agnostic 'common' module in restricted environments. Enable it
+// explicitly with `-PenableForge=true` when you have the required network
+// access (see README.md).
+if (settings.hasProperty('enableForge')) {
+    include 'forge'
+}

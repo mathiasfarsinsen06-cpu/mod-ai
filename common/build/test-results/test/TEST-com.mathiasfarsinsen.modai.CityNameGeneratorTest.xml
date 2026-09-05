@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mathiasfarsinsen.modai.CityNameGeneratorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-05T06:24:04.704Z" hostname="runnervmgx7h7" time="0.004">
+  <properties/>
+  <testcase name="reservedNamesAreNeverReturned()" classname="com.mathiasfarsinsen.modai.CityNameGeneratorTest" time="0.001"/>
+  <testcase name="generatedNameIsNonEmpty()" classname="com.mathiasfarsinsen.modai.CityNameGeneratorTest" time="0.001"/>
+  <testcase name="generatedNamesAreUniqueWithinTheSameGenerator()" classname="com.mathiasfarsinsen.modai.CityNameGeneratorTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

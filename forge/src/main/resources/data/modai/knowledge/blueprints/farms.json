@@ -1,0 +1,39 @@
+{
+  "blueprints": [
+    {
+      "id": "basic_farm",
+      "name": "Basic Wheat Farm",
+      "category": "farm",
+      "description": "A small hoed-and-watered wheat field. Cheap, low risk, feeds a handful of citizens.",
+      "tier": 1,
+      "requiredResources": { "WOOD": 8 }
+    },
+    {
+      "id": "expanded_farm",
+      "name": "Expanded Multi-Crop Farm",
+      "category": "farm",
+      "description": "Adds carrots and potatoes alongside wheat for more resilient food production.",
+      "tier": 2,
+      "requiredResources": { "WOOD": 20, "STONE": 5 }
+    },
+    {
+      "id": "iron_farm_basic",
+      "name": "Basic Iron Golem Farm",
+      "category": "resource",
+      "description": "A simple villager-hut iron farm producing a slow but steady iron trickle.",
+      "tier": 3,
+      "requiredResources": { "IRON": 10, "STONE": 40, "WOOD": 20 }
+    }
+  ],
+  "guides": [
+    {
+      "id": "farming_101",
+      "topic": "Farming basics for a young city",
+      "steps": [
+        "Prioritize a basic_farm as soon as a city has 2+ gatherers.",
+        "Upgrade to expanded_farm once population exceeds 8 to avoid starvation penalties.",
+        "Keep at least 2x the city's per-cycle food consumption in reserve as a buffer."
+      ]
+    }
+  ]
+}

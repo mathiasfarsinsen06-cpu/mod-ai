@@ -1,0 +1,54 @@
+// Forge module: integrates the engine-agnostic "common" city logic with
+// Minecraft Forge (commands, persistence, config, tick events, villager
+// hookup). This module requires network access to Forge's Maven repository
+// (https://maven.minecraftforge.net) to resolve the Minecraft/Forge
+// dependencies and therefore cannot be built inside network-restricted
+// sandboxes — see the README's "Kendte begrænsninger" section. It builds
+// normally in a standard development environment with internet access.
+plugins {
+    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+}
+
+version = '1.0.0'
+group = 'com.mathiasfarsinsen.modai'
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+minecraft {
+    mappings channel: 'official', version: '1.20.1'
+
+    runs {
+        client {
+            workingDirectory project.file('run')
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+            mods {
+                modai {
+                    source sourceSets.main
+                }
+            }
+        }
+        server {
+            workingDirectory project.file('run')
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+            mods {
+                modai {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
+}
+
+repositories {
+    maven {
+        name = 'MinecraftForge'
+        url = 'https://maven.minecraftforge.net/'
+    }
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.20.1-47.2.20'
+    implementation project(':common')
+}

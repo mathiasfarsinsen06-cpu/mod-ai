@@ -1,0 +1,15 @@
+// The "common" module contains pure-Java game-logic for the AI city system.
+// It has NO dependency on Minecraft or Forge classes so that it can be
+// unit tested quickly in any environment, and reused later by a Fabric
+// port if desired. The "forge" module wires this logic into the game.
+plugins {
+    id 'java-library'
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+    testImplementation platform('org.junit:junit-bom:5.10.2')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
