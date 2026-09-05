@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mathiasfarsinsen.modai.CitySimulationEngineTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-09-05T06:24:04.709Z" hostname="runnervmgx7h7" time="0.009">
+  <properties/>
+  <testcase name="warBetweenTwoCitiesEventuallyProducesLogEvent()" classname="com.mathiasfarsinsen.modai.CitySimulationEngineTest" time="0.008"/>
+  <testcase name="productionRunsAutomaticallyOverMultipleTicks()" classname="com.mathiasfarsinsen.modai.CitySimulationEngineTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,39 @@
+{
+  "blueprints": [
+    {
+      "id": "starter_houses",
+      "name": "Starter Cottage Row",
+      "category": "housing",
+      "description": "Simple single-room cottages, one per citizen, enough to keep beds claimed.",
+      "tier": 1,
+      "requiredResources": { "WOOD": 15 }
+    },
+    {
+      "id": "stone_townhouses",
+      "name": "Stone Townhouses",
+      "category": "housing",
+      "description": "Sturdier multi-room stone houses that improve villager comfort and city defense.",
+      "tier": 2,
+      "requiredResources": { "STONE": 30, "WOOD": 10 }
+    },
+    {
+      "id": "watchtower",
+      "name": "Guard Watchtower",
+      "category": "defense",
+      "description": "A stone tower manned by guards; improves the city's military strength in war.",
+      "tier": 2,
+      "requiredResources": { "STONE": 25, "IRON": 5 }
+    }
+  ],
+  "guides": [
+    {
+      "id": "housing_101",
+      "topic": "Better housing standards",
+      "steps": [
+        "Build starter_houses immediately so every citizen has a claimed bed.",
+        "Upgrade to stone_townhouses once stone production allows it without starving the farm project.",
+        "Consider a watchtower before declaring or expecting war."
+      ]
+    }
+  ]
+}
